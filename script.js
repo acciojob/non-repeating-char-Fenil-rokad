@@ -6,16 +6,15 @@ function firstNonRepeatedChar(str) {
     freq[char] = (freq[char] || 0) + 1;
   }
 
-  // Find first character with frequency 1
+  // Find first non-repeating character
   for (let char of str) {
     if (freq[char] === 1) {
       return char;
     }
   }
 
-  return null; // If all characters are repeated
+  return "null"; // Return "null" as a string
 }
 
 const input = prompt("Enter a string");
-const result = firstNonRepeatedChar(input);
-alert(result !== null ? result : "null");
+alert(firstNonRepeatedChar(input));

@@ -13,7 +13,7 @@ function firstNonRepeatedChar(str) {
     }
   }
 
-  return "null"; // Return "null" as a string
+  return null; // Return actual null, not "null" string
 }
 
 const input = prompt("Enter a string");
